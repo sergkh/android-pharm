@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
 
 public class ItemsSearchActivity extends Activity implements
 		OnItemLongClickListener {
@@ -39,6 +41,13 @@ public class ItemsSearchActivity extends Activity implements
 		searchText = (EditText) findViewById(R.id.searchField);
 		itemsList = (ListView) findViewById(R.id.foundItemsList);
 		itemsList.setOnItemLongClickListener(this);
+		
+		searchText.setOnEditorActionListener(new OnEditorActionListener() {
+			public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+				search(searchText);
+				return true;
+			}
+		});
 	}
 
 	@Override
