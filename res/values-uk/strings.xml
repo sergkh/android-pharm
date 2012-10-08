@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Фарм</string>
+    <string name="menu_settings">Налаштування</string>
+    <string name="title_activity_drugs_search">Список медикаментів</string>
+    <string name="search_hint">Шукати товар</string>
+    <string name="search_btn">Пошук</string>
+    <string name="title_activity_view_drugs">Додати товар</string>
+    <string name="title_activity_search">Пошук товару</string>
+    <string name="add">Додати+</string>
+    <string name="back">&lt; Назад</string>
+    <string name="addBtn">Додати</string>
+    <string name="title">Заголовок</string>
+    <string name="group">Група</string>
+    <string name="shelf">Полиця</string>
+    <string name="remove">Видалити</string>
+    <string name="cancel">Відміна</string>
+
+</resources>
