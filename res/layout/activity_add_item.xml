@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/titleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/titleTv"
+        android:layout_alignBottom="@+id/titleTv"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/GroupTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/titleTv"
+        android:layout_below="@+id/titleEdit"
+        android:layout_marginTop="31dp"
+        android:text="@string/group" />
+
+    <TextView
+        android:id="@+id/shelfTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/GroupTv"
+        android:layout_below="@+id/GroupTv"
+        android:layout_marginTop="38dp"
+        android:text="@string/shelf" />
+
+    <EditText
+        android:id="@+id/groupEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GroupTv"
+        android:layout_alignBottom="@+id/GroupTv"
+        android:layout_alignLeft="@+id/titleEdit"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/shelfEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shelfTv"
+        android:layout_alignBottom="@+id/shelfTv"
+        android:layout_alignLeft="@+id/groupEdit"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shelfEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="add"
+        android:text="@string/addBtn" />
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS items (
+        _id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title VARCHAR(50),
+        groups VARCHAR(50),
+        shelf VARCHAR(20))
+</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Ryan','Howard','1')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Michael','Scott','2')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Dwight','Schrute','2')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Jim','Halpert','2')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Pamela','Beesly','2')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Angela','Martin','1')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Kevin','Malone','3')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Oscar','Martinez','1')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Creed','Bratton','2')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Andy','Bernard','1')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Phyllis','Lapin','4')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Stanley','Hudson','1')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Meredith','Palmer','3')</statement>
+<statement>INSERT INTO items (title, groups, shelf) VALUES('Kelly','Kapoor','4')</statement>
+</sql>
